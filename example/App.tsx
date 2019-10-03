@@ -38,6 +38,7 @@ import StackWithHeaderPreset from './src/StackWithHeaderPreset';
 import StackWithTranslucentHeader from './src/StackWithTranslucentHeader';
 import SwitchWithStacks from './src/SwitchWithStacks';
 import TabsInDrawer from './src/TabsInDrawer';
+import TabStack from './src/TabStack';
 
 const ExampleInfo: any = {
   CustomTabUI: {
@@ -141,37 +142,42 @@ const ExampleInfo: any = {
     description: 'Receive the focus prop to know when a screen is focused',
     name: 'withNavigationFocus',
   },
+  TabStack: {
+    description: 'Testing ground for stack @ 2.0.0-alpha.19 bug',
+    name: 'Tab stack example',
+  },
 };
 
 const ExampleRoutes: any = {
-  CustomTabUI,
-  CustomTabs,
-  Drawer,
-  ModalStack,
-  SimpleStack,
-  SimpleTabs,
-  StackWithCustomHeaderBackImage,
-  StackWithTranslucentHeader,
-  StacksAndKeys,
-  StacksOverTabs,
-  SwitchWithStacks,
-  StacksOverTopTabs,
-  StacksInTabs,
-  ...Platform.select({
-    android: {},
-    ios: {
-      StackWithHeaderPreset,
-    },
-  }),
-  TabsInDrawer,
-  LinkStack: {
-    screen: SimpleStack,
-    path: 'people/Jordan',
-  },
-  LinkTabs: {
-    screen: SimpleTabs,
-    path: 'settings',
-  },
+  // CustomTabUI,
+  // CustomTabs,
+  // Drawer,
+  // ModalStack,
+  // SimpleStack,
+  // SimpleTabs,
+  // StackWithCustomHeaderBackImage,
+  // StackWithTranslucentHeader,
+  // StacksAndKeys,
+  // StacksOverTabs,
+  // SwitchWithStacks,
+  // StacksOverTopTabs,
+  // StacksInTabs,
+  // ...Platform.select({
+  //   android: {},
+  //   ios: {
+  //     StackWithHeaderPreset,
+  //   },
+  // }),
+  // TabsInDrawer,
+  TabStack,
+  // LinkStack: {
+  //   screen: SimpleStack,
+  //   path: 'people/Jordan',
+  // },
+  // LinkTabs: {
+  //   screen: SimpleTabs,
+  //   path: 'settings',
+  // },
 };
 
 interface State {
